@@ -14,7 +14,7 @@ const RegistroSchema = new Schema({
   telefonodueño: { type: String, required: [true, "Nombre obligatorio"] },
   correodueño: { type: String, required: [true, "Nombre obligatorio"] },
 
-  date: { type: Date, default: Date.now },
+  date: { type: Date, default: Date.now().toString() },
   activo: { type: Boolean, default: true },
 });
 
